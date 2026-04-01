@@ -452,6 +452,18 @@ document.querySelectorAll('.achievement-card, .project-card.project-clickable').
   });
 });
 
+/* ─── Video Demo Buttons: force open Drive link ─── */
+document.querySelectorAll('.btn-demo').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    const url = btn.getAttribute('href');
+    if (url && url !== '#') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  });
+});
+
 function closeModal() {
   modal.classList.remove('active');
   document.body.style.overflow = ''; // Resume scrolling
