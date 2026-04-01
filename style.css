@@ -1013,6 +1013,18 @@ section {
   transform: translateY(-1px);
 }
 
+.btn-demo {
+  background: var(--accent-glow);
+  color: var(--accent);
+  border-color: rgba(0, 113, 227, 0.3);
+}
+
+.btn-demo:hover {
+  background: rgba(0, 113, 227, 0.15);
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
 .btn-no-link {
   background: transparent;
   color: var(--text-3);
